@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Desafío técnico React de DailyPay con Next.js y TypeScript<h1>
 
-## Getting Started
+<h2>DailyPay Front End Engineering Challenge</h2>
 
-First, run the development server:
+<h3>Here are the rules of this challenge.. you must:</h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Build an application that displays a list of categories and nominees. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Please follow the design in the wireframe below.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run yarn start to start the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Run yarn backend to start the server and get access to API methods such as getBallotData. 
 
-## Learn More
+Use the React useEffect hook to fetch the ballot data from the provided API, and save it to state by using the React useState hook. useEffect Documentation Fetch API Documentation useState Documentation
 
-To learn more about Next.js, take a look at the following resources:
+When you click on a nominee, we should highlight the nominee card and save the selections using the React useState hook. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A user can only select one nominee per category, and we should be able to see all of their selections highlighted. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The selected nominee card should follow the style guides below.
 
-## Deploy on Vercel
+Make the layout responsive with at least one breakpoint (your choice as to how it looks on a smaller screen width).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Once the user is finished making their selections, they can click on a submit button that displays a results modal screen. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+A user can dismiss the modal by clicking on the close button (follow the wireframe below).
